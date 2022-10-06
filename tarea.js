@@ -208,7 +208,11 @@ agregarAmigo(usuario,'nuevoAmigo')
     //     likes: 4
     //   }]
     // };
-
+      var sumLikes = 0;
+    for (var e = 0; e < usuario.posts.length; e++) {
+      sumLikes = sumLikes + usuario.posts[e].likes;
+    }
+    return sumLikes
   }
 
   // ---------------------------------------------------------------------------//
@@ -226,7 +230,7 @@ agregarAmigo(usuario,'nuevoAmigo')
 class Persona {
     constructor(/*Escribir los argumentos que recibe el constructor*/) {
       // Crea el constructor:
-
+        constructor(nombre, apellido, edad, direccion) {
     }
 }
 
@@ -234,6 +238,8 @@ const crearInstanciaPersona = (nombre, apellido, edad, dir)=>{
     //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
     //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
     //Devolver la nueva persona creada
+    
+    return a = new Persona (nombre, apellido, edad, dir);
     
 }
 
